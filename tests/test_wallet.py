@@ -1,6 +1,6 @@
 import pytest
 # from src.wallet import Wallet, InsufficientAmount
-from src.wallet import Wallet, InsufficientAmount
+from src.wallet import Wallet, InsufficientAmount, f1
 
 
 @pytest.fixture
@@ -58,3 +58,14 @@ def test_transactions_insufficient_amounts(empty_wallet, earned, spent):
 
     with pytest.raises(Exception):
         empty_wallet.spend_cash(spent)
+
+
+
+# import pytest
+# from myfuncs import f1
+
+@pytest.fixture
+def test_myfunc():
+    assert f1() == 3
+
+print('success!!!')
