@@ -19,3 +19,12 @@ class Wallet(object):
 A = Wallet()
 # A.spend_cash(0)
 # A.add_cash(10)
+
+def f1():
+    x = 1
+    y = 2
+    print('Okay')
+    return x + y
+
+f1()
+
